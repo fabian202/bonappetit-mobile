@@ -74,24 +74,24 @@
     <!--<feature name="Notification">
       <param name="ios-package" value="CDVNotification" />
     </feature>-->
-    <gap:plugin name="nl.x-services.plugins.socialsharing" />
-    <gap:plugin name="nl.x-services.plugins.launchmyapp">
+    <gap:plugin name="nl.x-services.plugins.socialsharing" source="npm" />
+    <gap:plugin name="nl.x-services.plugins.launchmyapp" source="npm">
       <param name="URL_SCHEME" value="bonappetit"/>
     </gap:plugin>
     <gap:url-scheme name="bonappetit" role="None">
       <scheme>pgbr</scheme>
       <scheme>pgbw</scheme>
     </gap:url-scheme>
-    <gap:plugin name="com.adobe.plugins.gaplugin" />
-    <gap:plugin name="com.phonegap.plugin.statusbar" />
+    <gap:plugin name="com.adobe.plugins.gaplugin" source="npm"/>
+    <gap:plugin name="com.phonegap.plugin.statusbar" source="npm"/>
     <gap:config-file platform="ios" parent="UIStatusBarHidden">
       <true/>
     </gap:config-file>
     <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
       <false/>
     </gap:config-file>
-    <gap:plugin name="com.sharinglabs.cordova.plugin.datepicker" />
-  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+    <gap:plugin name="com.sharinglabs.cordova.plugin.datepicker" source="npm"/>
+  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" source="npm"/>
   <!--<feature name="InAppBrowser">
     <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
   </feature>
@@ -102,7 +102,7 @@
     <param name="android-package" value="org.apache.cordova.device.Device" />
   </feature>
   <!--<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.1.1" />-->
-  <gap:plugin name="hu.dpal.phonegap.plugins.spinnerdialog" version="0.2.1" />
+  <gap:plugin name="hu.dpal.phonegap.plugins.spinnerdialog" version="0.2.1" source="npm"/>
     <!--<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.1.1"  />-->
   <gap:config-file platform="ios" parent="CFBundleVersion">
     <string>1.0.7</string>
@@ -111,8 +111,8 @@
     <string>122</string>
   </gap:config-file>
   
-<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
-  <gap:plugin name="com.oauthio.plugins.oauthio" version="0.2.4" />
-<gap:plugin name="com.bez4pieci.cookies" version="0.0.1" />
-<gap:plugin name="net.bgta.phonegap.plugin.appversion" version="1.1.1" />
+<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" source="npm" />
+  <gap:plugin name="com.oauthio.plugins.oauthio" version="0.2.4" source="npm" />
+<gap:plugin name="com.bez4pieci.cookies" version="0.0.1" source="npm" />
+<gap:plugin name="net.bgta.phonegap.plugin.appversion" version="1.1.1" source="npm" />
 </widget>
