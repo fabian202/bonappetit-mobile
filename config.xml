@@ -8,10 +8,10 @@
         It-Matica
     </author>
     <!--<gap:plugin name="org.apache.cordova.device" />-->
-    <gap:plugin name="org.apache.cordova.dialogs" />
-    <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
-    <gap:plugin name="org.apache.cordova.camera"/>
-    <gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+    <gap:plugin name="org.apache.cordova.dialogs" source="npm" />
+    <gap:plugin name="com.phonegap.plugins.barcodescanner" source="npm" />
+    <gap:plugin name="org.apache.cordova.camera" source="npm"/>
+    <gap:plugin name="org.apache.cordova.device" version="0.2.12" source="npm" />
     <!--<plugin name="Notification" value="org.apache.cordova.Notification"/>-->
     <feature name="index.html" />
     <!--<preference name="phonegap-version" value="3.3.0" />-->
