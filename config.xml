@@ -114,5 +114,5 @@
 <gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" source="npm" />
   <!--<gap:plugin name="com.oauthio.plugins.oauthio" version="0.2.4" source="npm" />-->
 <!--<gap:plugin name="com.bez4pieci.cookies" version="0.0.1" source="npm" />-->
-<gap:plugin name="net.bgta.phonegap.plugins.appversion" version="1.0.0" />
+<gap:plugin name="net.bgta.phonegap.plugins.appversion" version="1.0.0" source="pgb" />
 </widget>
