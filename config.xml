@@ -91,7 +91,7 @@
       <false/>
     </gap:config-file>
     <!--<gap:plugin name="com.sharinglabs.datepicker" source="pgb" />-->
-  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" source="npm"/>
+  <gap:plugin name="org.apache.cordova.inappbrowser"  source="npm"/>
   <!--<feature name="InAppBrowser">
     <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
   </feature>
