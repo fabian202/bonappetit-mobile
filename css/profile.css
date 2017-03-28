@@ -1,0 +1,269 @@
+﻿
+@font-face
+{
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+
+label {
+    font-family: Trebuchet MS;
+    font-size: 1.3em;
+}
+
+#nameLabel {
+    font-family: AmaticSC;
+    color: #FBFF00;
+}
+
+.return {
+    width: 60px;
+    height: 100%;
+    border:0px;
+    margin: 0px 0px 5px 10px;
+}
+
+
+#returnImg {
+    border:0px;
+    margin-left: 1px;
+}
+
+.edit {
+    height: 100%;
+    border:0px;
+    margin: 1px;
+    text-align: right;
+}
+.lbl {
+    display: block;
+}
+
+#editButton {
+    width: 90%;
+    margin: 0px 0px;
+}
+
+#editImg {
+    width: 90px; 
+    height: 50px; 
+    border:0px; 
+}
+
+#profileContent {
+    border: 1px;
+    width: 100%;
+    margin: 5px 5px 0px 5px; 
+    border-radius: 10px 10px 0px 0px; 
+}
+
+#photoContent {
+    border: 1px; 
+    margin: 30px 5px 10px 5px;
+}
+
+#image {
+    margin: 30px 5px 10px 5px; 
+    width: 6em; 
+    height: 6em;
+}
+
+#profileInfo {
+    margin: 20px 30px 30px 30px; 
+    display: block;  
+    color: #BABABA;
+}
+
+#pointsButton {
+    width: 30%;
+}
+
+#facebookLogin {
+    display: none;
+}
+
+.editText {
+    display: none;
+}
+
+input {
+    width:90%;
+    height:30px;
+    margin: 10px 5px;
+    font-size:3em;
+}
+
+#nameProfile {
+    margin: 70px 0px 20px 40px; 
+    color: #888888; 
+    float: left; 
+    width: 40%
+}
+
+#reservations {
+    float:right; 
+    margin: 10px 0px;
+}
+
+hr {
+    color: #e8ee78;
+    width: 90%;
+    margin: 50px 0px;
+}
+
+#button_table {
+    margin: 0.5em;
+    height: 5em;
+}
+
+#back_label {
+    color: #fff;
+}
+
+#points {
+    background-color: #808080;
+    margin-left: 5%;
+}
+
+#points_label {
+    color: #FFFFFF;
+    font-family: AmaticSC;
+}
+
+
+#gender_selector {
+    height: 1.3em;
+    width: 81%;
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 3px;
+    margin:5px 5px;
+    font-size:1.3em;
+    margin: 5px 5px;
+}
+
+@media only screen and (min-width:720px){
+    header {
+	   height: 100px;
+    }
+
+    label {
+        margin-top: 2px;
+        font-size: 30px;
+    }
+
+    .return {
+        width: 80px;
+    }   
+
+    #nameLabel {
+        font-size: 50px;
+    }
+
+    #edit {
+        margin: 10px;
+    }
+
+    #editImg {
+        width: 100px; 
+        height: 70px; 
+        border:0px; 
+    }
+
+    #photoContent {
+        border: 1px; 
+        width: 30%; 
+        height: 12.5em; 
+        margin: 30px 30px 20px 20px;
+    }
+
+    #profileContent {
+        margin: 30px 30px 0px 30px; 
+    }
+
+    #image {
+        width: 12.5em; 
+        height: 12.5em;
+    }
+
+    #pointsButton {
+        margin: 10px 0px;
+        width: 85%;
+    }
+
+    input {
+        height:60px;
+        font-size:25px;
+    }
+
+    #nameProfile {
+        margin: 70px 40px; 
+        color: #888888; 
+        float: left; 
+        width: 40%
+    }
+
+    #gender_selector {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (min-width:1080px){
+    header {
+	   height: 100px;
+    }
+
+    label {
+        margin-top: 2px;
+        font-size: 4em;
+    }
+
+    .return {
+        width: 80px;
+    }   
+
+    #nameLabel {
+        font-size: 6em;
+    }
+
+    #edit {
+        margin: 10px;
+    }
+
+    #editImg {
+        width: 100px; 
+        height: 70px; 
+        border:0px; 
+    }
+
+    #photoContent {
+        border: 1px; 
+        height: 12em; 
+        margin: 30px 30px 20px 20px;
+    }
+
+    #profileContent {
+        margin: 30px 30px 0px 30px; 
+    }
+
+    /*#image {
+        width: 12em; 
+        height: 12em;
+    }*/
+
+    #pointsButton {
+        margin: 10px 0px;
+        width: 85%;
+    }
+
+    #nameProfile {
+        margin: 70px 40px; 
+        color: #888888; 
+        float: left; 
+        width: 40%
+    }
+
+    #gender_selector {
+        font-size: 3.5em;
+    }
+}

@@ -1,0 +1,58 @@
+﻿@font-face {
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+
+#content {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+#sendNotification {
+    background-color: #FBFF00;
+    color: #000000;
+}
+
+#waiter_label {
+    color: #000000;
+    font-family: AmaticSC;
+    font-size: 1.5em;
+}
+
+#observation_text {
+    color: #FBFF00;
+    font-family: AmaticSC;
+    font-size: 1.5em;
+}
+
+@media only screen and (min-width:720px){
+    
+    #content {
+        font-size: 2em;
+    }
+
+    #waiter_label {
+        font-size: 2em;
+    }
+
+    label {
+        margin: 20px 10px;
+    }
+}
+
+
+@media only screen and (min-width:1080px){
+   
+    #content {
+        font-size: 2em;
+    }
+
+    #waiter_label {
+        font-size: 3em;
+    }
+
+    label {
+        margin: 20px 10px;
+        font-size: 2em;
+    }
+}

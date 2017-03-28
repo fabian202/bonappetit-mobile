@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class=" overthrow-enabled">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" type="text/css" href="css/categoryProducts.css" />
+    <link rel="stylesheet" type="text/css" href="css/overthrow/overthrow.css" />
+    <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+        <script type="text/javascript" src="js/helpers/ga-plugin.js"></script>
+        <title>Bon Appétit</title>
+    </head>
+    
+    <body  onload="GA.initialize();" onunload="GA.goingAway();">
+        <header>
+            <!--<table>
+                    <tr>
+                        <td style="text-align: left; width: 35%">
+                            <div id="return"><img id="returnImg" src="img/return.png" /></div>
+                        </td>
+                        <td style="text-align: right; height: 40px;">
+                            <div id="edit"><input type="search" id="search" style="width: 90%" onkeydown="app.cleanDiv()"/></div>
+                        </td>
+                    </tr>
+                </table>-->
+             <img id="bannerImg" src="img/logo_bonappetit.png"/>
+            <div>
+                <div id="back" onclick="G.toMenu();" class="back_button"><label id="back_label">< MENÚ</label></div>
+                <img id="line_banner" src="img/b16.png"/>
+            </div>
+            
+            <label id="categoryLabel"></label>
+        </header>
+            <article class="overthrow">
+                <div id="content" style="overflow: auto;" class="primary overthrow">
+                    <div id="contentCategory">
+                        
+                        <!--<div id="Div2" class="products" onclick="app.showProduct(' + data.Body[i].ProductId + ')" >
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="img/paisa.png" class="listSelector" id="Img6"/>
+                                    </td>
+                                    <td class="widthProduct">
+                                        <table class="widthProduct">
+                                            <tr>
+                                                <td style="width: 100%">
+                                                    <label style="margin: 20px 0px;">DESAYUNO AMERICANO</label><br />
+                                                </td>
+                                            </tr>
+                                            <tr  style="height: 110px; width: 100%;">
+                                                <td style="width: 100%">
+                                                    <label style="">Huevos al gusto.</label><br />
+                                                    <label style="float: right;"> $ 12.000</label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <hr/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>-->
+
+
+                        <!--<div id="product1" class="products" onclick="app.showProduct('1')" >
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="img/b20.png" class="listSelector" id="listSelector1"/>
+                                    </td>
+                                    <td class="widthProduct">
+                                        <table class="widthProduct">
+                                            <tr>
+                                                <td>
+                                                    <label class="productName" style="margin: 20px 0px;">Producto 1</label><br />
+                                                </td>
+                                            </tr>
+                                            <tr  style="height: 5em;">
+                                                <td style="width: 100%;">
+                                                    <label style="">Descripción del producto</label><br />
+                                                    
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div style="float: right;">
+                                                        <label style="float: right;">$ 10000</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <hr/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>-->
+                        
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                <div id="categories_page"></div>
+            </article>
+        <!--<div id="ShareLink" onclick="window.plugins.socialsharing.share('Quiero invitarte a mi mesa', null, null, ''+window.localStorage.getItem('link'));" style="width: 90%; height: 60px;">Share</div>-->
+        <footer>
+
+            <div id="footer_div" style="display: inline-block;">
+                <div style="display: inline">
+                    <div class="td_footer">
+                        <img id="Img4" class="footer_image" src="img/app.jpg" onclick="G.friends()" /><br />
+                        <label id="Label4" class="text">Amigos</label>
+                    </div>
+                    <div class="td_footer">
+                         <img id="Img6" class="footer_image" src="img/waiter.png" onclick="G.callWaiter()"/><br />
+                        <label id="Label5" class="text">Mesero</label>
+                    </div>
+                    <div class="td_footer">
+                        <img id="Img7" class="footer_image" src="img/chart.png" onclick="G.showOrder()"/>
+                        <label id="orderPrice" class="text">$0.00</label>
+                    </div>
+                    <div class="td_footer">
+                        <img id="Img8" class="footer_image" src="img/bill1.png" onclick="G.showBill()"/>
+                        <label id="Label7" class="text">Cuenta</label>
+                    </div>
+                </div>
+            </div>
+            <div class="reserve_div">
+                <div id="reserve" onclick="app.notification()" class="button"><label id="bill_label">Reservar</label></div> <br />
+            </div>
+
+            <!--<table id="footer_banner">
+                <tr>
+                    <td>
+                        <img id="Img1" class="footer_image" src="img/app.jpg" onclick="app.friends()"/>
+                    </td>
+                    <td style="padding: 8px;">
+                        <img id="Img2" class="footer_image" src="img/waiter.png" onclick="app.callWaiter()"/>
+                    </td>
+                    <td>
+                        <img id="Img3" class="footer_image" src="img/chart.png" onclick="app.showOrder()"/>
+                    </td>
+                    <td>
+                        <img id="Img5" class="footer_image" src="img/bill1.png"  onclick="app.showBill()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="Label1" class="text">Amigos</label>
+                    </td>
+                    <td>
+                        <label id="Label2" class="text">Mesero</label>
+                    </td>
+                    <td>
+                        <label id="orderPrice" class="text">$0.00</label>
+                    </td>
+                    <td>
+                        <label id="Label3" class="text">Cuenta</label>
+                    </td>
+                </tr>
+            </table>-->
+            <!--<img id="footer_banner" src="img/notifications.jpg"/>-->
+        </footer>
+        <!--<script type="text/javascript" src="phonegap.js"></script>-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.0.3.min.js"></script>
+        <!--<script type="text/javascript" src="js/libs/SocialSharing.js"></script>-->
+        <script type="text/javascript" src="js/libs/config.js"></script>
+        <script type="text/javascript" src="js/helpers/navigate-app.js"></script>
+        <script type="text/javascript" src="js/helpers/share-table.js"></script>
+        <script type="text/javascript" src="js/helpers/general.js"></script>
+        <script type="text/javascript" src="js/content/categoryProducts.js"></script>
+        <!--<script type="text/javascript" src="http://debug.build.phonegap.com/target/target-script-min.js#80203262-73cc-11e3-a4f6-22000a98b3d6"></script>-->
+        <script type="text/javascript">
+            app.initialize();
+            ST.init();
+        </script>
+        <script type="text/javascript" src="js/helpers/attended-table.js"></script>
+        <script type="text/javascript">
+            AT.getAttendedTable();
+        </script>
+
+    </body>
+</html>

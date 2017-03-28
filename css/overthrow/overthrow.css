@@ -1,0 +1,126 @@
+﻿
+		/* DEMO CSS IS GROSS */
+		body {
+			margin: 0;
+		}
+		header, footer {
+			padding: 0;
+			display: block;
+		    z-index: 1;
+		}
+		.primary {
+			padding: 0 2%;
+		}
+		article {
+			font-size: 90%;
+			overflow: hidden; /* clearfix */
+		}
+
+		
+		/* overthrow layout enhancements */
+	    /* Enable overflow: auto on elements with overthrow class when html element has overthrow class too */
+		.overthrow-enabled .overthrow {
+	        overflow: auto;
+	        -webkit-overflow-scrolling: touch;
+	    	z-index: 1;
+
+	    }
+		html.overthrow-enabled, html.overthrow-enabled body {
+			height: 95%;
+			margin: 0;
+		}
+		.overthrow-enabled article {
+			padding: 0;
+			position: relative;
+		}
+        @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1){
+            html.overthrow-enabled article {
+				height: 10em;
+                overflow-y: scroll;
+                margin: 0px 0px 1px;
+                overflow:scroll;
+			}
+            #overthrow {
+                overflow-y: scroll;
+                margin: 0px 0px 1px;
+                overflow:scroll;
+            }
+
+            
+        }
+
+        @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2) {
+            html.overthrow-enabled article {
+				height: 13em;
+			}
+            #overthrow {
+                height: 13em;
+            }
+        }
+        @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+            html.overthrow-enabled article {
+				height: 16em;
+			}
+            #overthrow {
+                height: 16em;
+            }
+        }
+        @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+            html.overthrow-enabled article {
+				height: 100%;
+			}
+            #overthrow {
+                height: 25%;
+            }
+        }
+        @media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
+            html.overthrow-enabled article {
+				height: 32em;
+			}
+            #overthrow {
+                height: 32em;
+            }
+        }
+        
+		@media (min-height: 25em){
+			html.overthrow-enabled article {
+				height: 75%;
+			}
+			article {
+				font-size: 100%;
+			}
+		}
+		@media (min-width: 35em){
+			html.overthrow-enabled nav, html.overthrow-enabled .primary {
+				height: 80%;
+			}
+			.primary {
+				float: left;
+				width: 97%;
+			}
+		}
+        @media only screen and (max-width:480) {
+            html.overthrow-enabled article {
+				height: 30%;
+			}
+			article {
+				font-size: 100%;
+			}
+
+            html.overthrow-enabled nav, html.overthrow-enabled .primary {
+				height: 40%;
+			}
+			.primary {
+				float: left;
+				width: 97%;
+			}
+        }
+
+        /*@media only screen and (min-width: 480px) and (max-device-width: 640px) {
+            html.overthrow-enabled article {
+				height: 30%;
+			}
+        }*/
+
+
+	

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" id="main">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+       	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/general.css" />
+        <link rel="stylesheet" type="text/css" href="css/points.css" />
+        <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+    <script type="text/javascript" src="js/helpers/ga-plugin.js"></script>
+    <title>Bon Appétit</title>
+    </head>
+    
+    <body  onload="GA.initialize();" onunload="GA.goingAway();">
+        <header>
+            
+            <div id="banner">
+                <img id="banner_logo" src="img/logo_bonappetit.png" />
+            </div>
+            <div id="profile" onclick="app.toProfile();" class="back_button"><label id="back_label">< PERFÍL</label></div>
+            <br />
+            <br />
+        </header>
+        <div id="content">
+            <br />
+            <br />
+            <div id="points_page"></div>
+        </div>
+        <!--<script type="text/javascript" src="phonegap.js"></script>-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="barcodescanner.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+        <script type="text/javascript" src="js/helpers/navigate-app.js"></script>
+        <script type="text/javascript" src="js/helpers/share-table.js"></script>
+        <script type="text/javascript" src="js/helpers/general.js"></script>
+        <script type="text/javascript" src="js/content/points.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+            ST.init();
+        </script>
+        <!--<script type="text/javascript" src="http://debug.build.phonegap.com/target/target-script-min.js#80203262-73cc-11e3-a4f6-22000a98b3d6"></script>-->
+    </body>
+</html>

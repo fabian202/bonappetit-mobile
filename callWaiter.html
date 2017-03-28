@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class=" overthrow-enabled">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/general.css" />
+        <link rel="stylesheet" type="text/css" href="css/callWaiter.css" />
+        <link rel="stylesheet" type="text/css" href="css/overthrow/overthrow.css" />
+        <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+        <script type="text/javascript" src="js/helpers/ga-plugin.js"></script>
+        <title>Bon Appétit</title>
+    </head>
+    
+    <body  onload="GA.initialize();" onunload="GA.goingAway();">
+        <header>
+            
+            <img id="bannerImg" src="img/logo_bonappetit.png"/>
+            <div>
+                <div id="back" onclick="app.back()" class="back_button"><label id="back_label">< ATRÁS</label></div>
+                <img id="line_banner" src="img/b16.png"/>
+            </div>
+        </header>
+        
+        <article id="overthrow" class="overthrow" style="height: 80%">
+            <div id="content" style="overflow: auto;" class="primary overthrow">
+                <label id="observation_text" style="margin: 0% 5%;">Observaciones</label>
+                <br />
+                <textarea  id="observation" rows="5" cols="50" style="margin: 2% 5%; width: 90%;">
+                
+                </textarea>
+                <!--<input type="text" style="margin: 2% 5%; width: 90%;" /><br />-->
+                <div id="sendNotification" onclick="app.callWaiter()" class="button"><label id="waiter_label">Llamar al mesero</label></div>
+                <br />
+                <br />
+                
+            </div>
+            <div id="callWaiter_page"></div>
+        </article>
+        <!--<div id="ShareLink" onclick="window.plugins.socialsharing.share('Quiero invitarte a mi mesa', null, null, ''+window.localStorage.getItem('link'));" style="width: 90%; height: 60px;">Share</div>-->
+        <footer>
+
+            <div id="footer_div" style="display: inline-block;">
+                <div style="display: inline">
+                    <div class="td_footer">
+                        <img id="Img5" class="footer_image" src="img/app.jpg" onclick="G.friends()" /><br />
+                        <label id="Label4" class="text">Amigos</label>
+                    </div>
+                    <div class="td_footer">
+                         <img id="Img6" class="footer_image" src="img/waiter.png" onclick="G.callWaiter()"/><br />
+                        <label id="Label5" class="text">Mesero</label>
+                    </div>
+                    <div class="td_footer">
+                        <img id="Img7" class="footer_image" src="img/chart.png" onclick="G.showOrder()"/>
+                        <label id="orderPrice" class="text">$0.00</label>
+                    </div>
+                    <div class="td_footer">
+                        <img id="Img8" class="footer_image" src="img/bill1.png" onclick="G.showBill()"/>
+                        <label id="Label7" class="text">Cuenta</label>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!--<script type="text/javascript" src="phonegap.js"></script>-->
+       <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.0.3.min.js"></script>
+        <!--<script type="text/javascript" src="js/libs/SocialSharing.js"></script>-->
+        <script type="text/javascript" src="js/libs/config.js"></script>
+        <script type="text/javascript" src="js/helpers/navigate-app.js"></script>
+        <script type="text/javascript" src="js/helpers/share-table.js"></script>
+        <script type="text/javascript" src="js/helpers/general.js"></script>
+        <script type="text/javascript" src="js/content/callWaiter.js"></script>
+        <!--<script type="text/javascript" src="http://debug.build.phonegap.com/target/target-script-min.js#80203262-73cc-11e3-a4f6-22000a98b3d6"></script>-->
+        <script type="text/javascript">
+            app.initialize();
+            ST.init();
+        </script>
+        <script type="text/javascript" src="js/helpers/attended-table.js"></script>
+        <script type="text/javascript">
+            AT.getAttendedTable();
+        </script>
+
+
+    </body>
+</html>

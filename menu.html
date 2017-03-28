@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class=" overthrow-enabled">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/general.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="css/overthrow/overthrow.css" />
+        <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+        <script type="text/javascript" src="js/helpers/ga-plugin.js"></script>
+        <title>Bon Appétit</title>
+    </head>
+    
+    <body  onload="GA.initialize();" onunload="GA.goingAway();">
+        <header>
+            <div id="bannerImg">
+                <img id="imageBanner"  src="img/logo_bonappetit.png"/>
+            </div>
+            <div>
+                <div id="back" onclick="app.getOrders()" class="back_button"><label id="back_label">< SALIR</label></div>
+                <img id="line_banner" src="img/b16.png"/>
+            </div>
+        </header>
+        <article id="overthrow" class="overthrow" style="height: 80%">
+            <div id="content" style="overflow: auto;" class="primary overthrow">
+                <ul id="menu" class="ul-menu">
+                    <!--<li>
+	                    <div id="categories20" class="categories" onclick="app.changeImg(20)" >
+		                    <label class="category_tittle">Comidas</label>
+		                    <img src="img/selector.png" id="listSelector20" class="selector"/>
+	                    </div>
+	                    <ul class="ul-menu">
+		                    <li>
+
+			                    <div id="categories22" onclick="app.showProducts(22,'Burritos' ,'Food')" class="categories_detail categories_detail20" style="width:100%">
+				                    <label class="category_name">Burritos</label><br/>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <label class="category_description"> jdfhsjdbfk askjdhaskdghaskd sakdgaskhdsakjdh sal</label>
+                                            </td>
+                                            <td>
+                                                <div class="asd asd20"><label>></label></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+				                    
+				                    <hr/>
+			                    </div>
+			                    
+		                    </li>
+	                    </ul>
+	                    <ul class="ul-menu">
+		                    <li>
+			                    <div id="categories23" onclick="app.showProducts(23,'Tacos' ,'Food')" class="categories_detail categories_detail20">
+                                    <div class="qwe">
+                                        <label class="category_name">Tacos</label><br/>
+				                        <label class="category_description">Los más crocantes tacos armados con los mejores y mas frescos ingredientes.</label>
+                                    </div>
+				                  <hr/>
+			                    </div>
+			                    <div class="asd asd20"><label>></label></div>
+		                    </li>
+	                    </ul>
+	                    <ul class="ul-menu">
+		                    <li>
+			                    <div id="categories24" onclick="app.showProducts(24,'Nachos' ,'Food')" class="categories_detail categories_detail20">
+				                    <label class="category_name">Nachos</label><br/>
+				                    <label class="category_description">Provocativos y crujientes, ideales para picar, compartir y pasar una momento agradable.</label>
+				                    <hr/>
+			                    </div>
+			                    <div class="asd asd20"><label>></label></div>
+		                    </li>
+	                    </ul>
+	                    <ul class="ul-menu">
+		                    <li>
+			                    <div id="categories93" onclick="app.showProducts(93,'Sopas' ,'Food')" class="categories_detail categories_detail20">
+				                    <label class="category_name">Sopas</label><br/>
+				                    <label class="category_description">Calientes y frescas te haran sentir como en casa...</label>
+				                    <hr/>
+			                    </div>
+			                    <div class="asd asd20"><label>></label></div>
+		                    </li>
+	                    </ul>
+                    </li>
+                    <li>
+	                    <div id="categories21" class="categories" onclick="app.changeImg(21)" >
+		                    <label class="category_tittle">Bebidas</label>
+		                    <img src="img/selector.png" id="listSelector21" class="selector"/>
+	                    </div>
+	                    <ul class="ul-menu">
+		                    <li>
+			                    <div id="categories75" onclick="app.showProducts(75,'Jugos' ,'Drink')" class="categories_detail categories_detail21">
+				                    <label class="category_name">Jugos</label><br/>
+				                    <label class="category_description">Deliciosos jugos naturales.</label>
+				                    <hr/>
+			                    </div>
+			                    <div class="asd asd20"><label>></label></div>
+		                    </li>
+	                    </ul>
+	                    <ul class="ul-menu">
+		                    <li>
+			                    <div id="categories78" onclick="app.showProducts(78,'Cocteles' ,'Drink')" class="categories_detail categories_detail21">
+				                    <label class="category_name">Cocteles</label><br/>
+				                    <label class="category_description">Deliciosos cocteles para hacerte pasar buenos momentos.</label>
+				                    <hr/>
+			                    </div>
+			                    <div class="asd asd20"><label>></label></div>
+		                    </li>
+	                    </ul>
+	                    <ul class="ul-menu">
+		                    <li>
+			                    <div id="categories25" onclick="app.showProducts(25,'Gaseosas' ,'Drink')" class="categories_detail categories_detail21">
+				                    <label class="category_name">Gaseosas</label><br/>
+				                    <label class="category_description">Encontraras todas las gaseosas ofrecidas en nuestro país.</label>
+				                    <hr/>
+			                    </div>
+			                    <div class="asd asd20"><label>></label></div>
+		                    </li>
+	                    </ul>
+	                    <ul class="ul-menu">
+		                    <li>
+			                    <div id="categories26" onclick="app.showProducts(26,'Cervezas ' ,'Drink')" class="categories_detail categories_detail21">
+				                    <label class="category_name">Cervezas </label><br/>
+				                    <label class="category_description">Gran variedad de cervezas de todo el mundo.</label>
+				                    <hr/>
+			                    </div>
+			                    <div class="asd asd20"><label>></label></div>
+		                    </li>
+	                    </ul>
+                    </li>-->
+                </ul>
+                
+               <!-- <div id="Div2" onclick="app.showProducts('2','Comida 1' ,'food')" class="categories_detail categories_detail1 + '">
+                        <label class="category_name">Comida 1</label><br/>
+                        <label>Es una deliciosa Comida, Es una deliciosa Comida, Es una deliciosa Comida, Es una deliciosa Comida, Es una deliciosa Comida, Es una deliciosa Comida</label>
+                    </div><br/>
+                <div id="Div3" onclick="app.showProducts('2','Comida 1' ,'food')" class="categories_detail categories_detail1 + '">
+                        <label class="category_name">Comida 1</label><br/>
+                        <label>Es una deliciosa Comida, Es una deliciosa Comida, Es una deliciosa Comida, Es una deliciosa Comida, Es una deliciosa Comida, Es una deliciosa Comida</label>
+                    </div><br/>-->
+                
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div id="menu_page"></div>
+        </article>
+        <!--<div id="ShareLink" onclick="window.plugins.socialsharing.share('Quiero invitarte a mi mesa', null, null, ''+window.localStorage.getItem('link'));" style="width: 90%; height: 60px;">Share</div>-->
+        <footer>
+
+            <div id="footer_div" >
+                <div style="display: inline">
+                    <div class="td_footer">
+                        <img id="Img5" class="footer_image" src="img/app.jpg" onclick="G.friends()" /><br />
+                        <label id="Label4" class="text">Amigos</label>
+                    </div>
+                    <div class="td_footer">
+                         <img id="Img6" class="footer_image" src="img/waiter.png" onclick="G.callWaiter()"/><br />
+                        <label id="Label5" class="text">Mesero</label>
+                    </div>
+                    <div class="td_footer">
+                        <img id="Img7" class="footer_image" src="img/chart.png" onclick="G.showOrder()"/>
+                        <label id="orderPrice" class="text">$0.00</label>
+                    </div>
+                    <div class="td_footer">
+                        <img id="Img8" class="footer_image" src="img/bill1.png" onclick="G.showBill()"/>
+                        <label id="Label7" class="text">Cuenta</label>
+                    </div>
+                </div>
+            </div>
+            <div class="reserve_div">
+                <div id="reserve" onclick="app.notification()" class="button"><label id="bill_label">Reservar</label></div> <br />
+            </div>
+        </footer>
+        <script type="text/javascript" src="phonegap.js"></script>
+       <!--<script type="text/javascript" src="cordova.js"></script>-->
+
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.0.3.min.js"></script>
+        <!--<script type="text/javascript" src="js/libs/SocialSharing.js"></script>-->
+        <script type="text/javascript" src="js/libs/config.js"></script>
+        <script type="text/javascript" src="js/helpers/navigate-app.js"></script>
+        <script type="text/javascript" src="js/helpers/share-table.js"></script>
+        <script type="text/javascript" src="js/helpers/general.js"></script>
+        <script type="text/javascript" src="js/content/menu.js"></script>
+        <!--<script type="text/javascript" src="http://debug.build.phonegap.com/target/target-script-min.js#80203262-73cc-11e3-a4f6-22000a98b3d6"></script>-->
+        <script type="text/javascript">
+            app.initialize();
+            ST.init();
+        </script>
+        <script type="text/javascript" src="js/helpers/attended-table.js"></script>
+        <script type="text/javascript">
+            AT.getAttendedTable();
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,72 @@
+﻿@font-face
+{
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+body {
+	overflow: hidden; 
+	width: inherit;
+}
+#banner_logo {
+    width: 90%;
+    margin-left: 30px;
+}
+
+label {
+    font-family: AmaticSC;
+    display:inline;
+    letter-spacing:1px;
+    margin-left: 5px;
+    color: #FBFF00;
+}
+
+.second_lbl {
+    color: #FFFFFF;
+}
+
+.container {
+    margin: 50px;
+
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+}
+
+hr {
+    color: #e8ee78;
+    width: 80%;
+}
+
+td {
+    padding-left: 30px;
+}
+
+#back_label {
+    color: #fff;
+    font-family: AmaticSC;
+}
+
+@media only screen and (min-width:720px) and (max-width:1280px){
+    #banner_logo {
+        width: 90%;
+        margin-left: 50px;
+    }
+    label {
+        font-size: 50px;
+    }
+
+    .birthday {
+        font-size: 30px;
+    }
+
+    .image {
+        height: 150px;
+        width: 150px;
+    }
+
+    #back_label {
+    color: #fff;
+}
+}

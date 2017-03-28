@@ -1,0 +1,188 @@
+﻿html, body {
+    overflow-x: hidden;
+}
+
+@font-face
+{
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+
+#labelName {
+    position: absolute;
+    
+}
+
+label {
+    font-family:Trebuchet MS;
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+#search {      
+   background: #FFFFFF;
+   background-image:url('../img/search-button.png');
+   background-repeat:no-repeat;
+   background-position:right;  padding-right:15px;
+}
+
+/*.td_Content {
+    background-color: #707070;
+    padding: 20px;
+    border-spacing: 30px;
+    color: #ffffff;
+    opacity: 0.6;
+    font-size: 0.8em;
+}*/
+
+/*#orderContent {
+    margin: 5px 0px 5px 5px;
+    border-spacing: 5px;
+}*/
+
+/*#orderPrice {
+    text-align: center;
+    width: 80%;
+    
+}*/
+#totalPriceDiv {
+    width: 80%;
+    height: 50px;
+    background-color: #737373;
+    text-align: center;
+    padding: 10px;
+    opacity: 0.6;
+    color: #FBFF00;
+    margin: 5px 0px 5px 5px;
+}
+
+input[type=checkbox] {
+    transform:scale(1.5,1.5);
+}
+
+#bill {
+    margin: 50px;
+    width: 90%;
+}
+
+#order {
+    background-color: #FBFF00;
+    color: #000000;
+}
+
+#order_label {
+    color: #000000;
+    font-family: AmaticSC;
+    font-size: 2em;
+}
+
+#content {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.td_footer {
+    width: 25%;
+   float:left;
+}
+
+.text {
+    float: none
+}
+
+#message {
+    color: #FBFF00;
+}
+
+
+@media only screen and (min-width:720px) {
+    label {
+        margin: 20px 50px;
+        font-family:Trebuchet MS;
+        vertical-align: middle;
+    }
+
+    #order_label {
+        font-size: 3em;
+    }
+
+    .td_Content {
+        font-size: 1em;
+    }
+
+    .products {
+        width: 99%; 
+        text-align: left; 
+        color: #000000; 
+        border-radius: 10px; 
+        background: #ffffff; 
+        box-shadow: 1px 1px 5px #888888; 
+        height: 25em; 
+        margin: 0px 5px 0px 5px;
+        line-height: 80px;
+    }
+
+    #orderContent {
+        margin: 50px 0px 50px 50px;
+         border-spacing: 20px;
+    }
+
+    #totalPriceDiv {
+        width: 80%;
+        height: 50px;
+        background-color: #737373;
+        text-align: center;
+        padding: 10px;
+        opacity: 0.6;
+        margin: 0px 50px;
+        color: #FBFF00;
+    }
+}
+
+
+
+@media only screen and (min-width:1080px) {
+    label {
+        margin: 20px 50px;
+        font-family:Trebuchet MS;
+        vertical-align: middle;
+        font-size: 1.8em;
+    }
+
+    #order_label {
+        font-size: 5em;
+    }
+
+    .td_Content {
+        font-size: 1.3em;
+    }
+
+    .products {
+        width: 99%; 
+        text-align: left; 
+        color: #000000; 
+        border-radius: 10px; 
+        background: #ffffff; 
+        box-shadow: 1px 1px 5px #888888; 
+        height: 25em; 
+        margin: 0px 5px 0px 5px;
+        line-height: 80px;
+    }
+
+    #orderContent {
+        margin: 50px 0px 50px 50px;
+         border-spacing: 20px;
+    }
+
+    #totalPriceDiv {
+        width: 80%;
+        height: 2em;
+        background-color: #737373;
+        text-align: center;
+        padding: 10px;
+        opacity: 0.6;
+        margin: 0px 50px;
+        color: #FBFF00;
+    }
+
+}

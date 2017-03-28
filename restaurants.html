@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class=" overthrow-enabled">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" type="text/css" href="css/restaurants.css" />
+    <link rel="stylesheet" type="text/css" href="css/overthrow/overthrow.css" />
+    <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+    <script type="text/javascript" src="js/helpers/ga-plugin.js"></script>
+    <title>Bon Appétit</title>
+    </head>
+    
+    <body style="height: 100%;">
+        <!--<body  onload="GA.initialize();" onunload="GA.goingAway();" style="height: 100%;">-->
+        <header>
+            <div>
+                <div id="back" onclick="app.goMain();" class="back_button"><label id="back_label">< REGRESAR</label></div>
+                <img id="line_banner" src="img/b161.png"/>
+
+            </div>
+            <table style="margin-left: 1%; width:100%;">
+                <tr style="width: 100%;">
+                    <td style="width: 25%;">
+                        <div onclick="app.selectFilter(0)" id="name_restaurants" class="button filterbutton" style="height: 2em; width: 6em; width: 90%;">
+                            <label  style="font-family: AmaticSC; width: 100%;">Nombre</label>
+                        </div>
+                    </td>
+                    <td style="width: 25%;">
+                        <div onclick="app.selectFilter(1)" id="type_restaurants" class="button filterbutton" style="height: 2em; width: 6em; width: 90%;">
+                            <label  style="font-family: AmaticSC; width: 100%;">Tipo</label>
+                        </div>
+                    </td>
+                    <td style="width: 25%;">
+                        <div onclick="app.selectFilter(2)" id="near_restaurants" class="button filterbutton" style="height: 2em; width: 6em; width: 90%;">
+                            <label  style="font-family: AmaticSC; width: 100%;">Rest. cercanos</label>
+                        </div>
+                    </td>
+                    <td style="width: 25%;">
+                        <div onclick="app.selectFilter(3)" id="score_restaurants" class="button filterbutton" style="height: 2em; width: 6em; width: 90%;">
+                            <label  style="font-family: AmaticSC; width: 100%;">Calificación</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <input id="search_name" type="search" placeholder="Buscar por nombre" onkeyup="app.search($('#search_name').val())"/>
+            <select id="select_type" onchange="app.selectType()">
+                <option value="" selected="selected">Ninguno</option>
+            </select>
+            <br />
+            <div class="slider_div" style="width: 100%; text-align: center;">
+                <label  id="slider_label" for="slider" class="slider_div" style="color:white;"></label>
+                <br />
+ 	            <input type="range" class="slider_div" name="slider" id="slider" value="3" min="1" max="50" onchange="app.showNearRestaurants(this.value);"  />
+            </div>
+            
+            
+        </header>
+        <article class="overthrow" style="height:100%;">
+            <div id="content" style="overflow: auto; height:100%;" class="primary overthrow">
+                <div id="div_content">
+                    <table style="height: 100%;" id="table_content">
+                        
+                        <!--<tr>
+                            <td>
+                                <img id="Img14" src="img/app.jpg" width="100" height="100"/>
+                                 
+                            </td>
+                            <td  style=" height: 100%; width: 100%;">
+                                <div class="div_element">
+                                    <label>Bon Appétit</label>
+                                </div>
+                                <br />  
+                                <div class="div_element">
+                                    <label>Distancia: 2km</label>
+                                </div>  
+                                <hr style="width: 100%;"/>
+                            </td>
+                           
+                        </tr>-->
+                    </table>
+
+                    <br />
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                </div>
+                
+            </div>
+            
+            <div id="restaurants_page"></div>
+        </article>
+        
+        <!--<div id="ShareLink" onclick="window.plugins.socialsharing.share('Quiero invitarte a mi mesa', null, null, ''+window.localStorage.getItem('link'));" style="width: 90%; height: 60px;">Share</div>-->
+        <!--<footer>
+            <div onclick="app.constructSidedish()" id="Div1" class="button filterbutton" style="height: 2em; width: 6em; width: 90%; background-color: #ffd800">
+                            <label  style="font-family: AmaticSC; width: 100%;">Nombre</label>
+                        </div>
+        </footer>-->
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/Raty/jquery.raty.min.js"></script>
+        <script type="text/javascript" src="js/helpers/navigate-app.js"></script>
+        <script type="text/javascript" src="js/helpers/general.js"></script>
+        <script type="text/javascript" src="js/content/restaurants.js"></script>
+        <!--<script type="text/javascript" src="http://debug.build.phonegap.com/target/target-script-min.js#80203262-73cc-11e3-a4f6-22000a98b3d6"></script>-->
+        <script type="text/javascript">
+            app.initialize();
+            
+            //app.receivedEvent();
+            //app.constructHTML(data);
+            //ST.init();
+        </script>
+
+    </body>
+</html>

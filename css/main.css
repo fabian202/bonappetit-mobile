@@ -1,0 +1,115 @@
+﻿@font-face
+{
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+body {
+	overflow: hidden; 
+	width: inherit;
+}
+#banner_logo {
+    width: 90%;
+    margin-left: 30px;
+}
+
+label {
+    font-family: AmaticSC;
+    display:inline;
+    letter-spacing:1px;
+    margin-left: 5px;
+    color: #FBFF00;
+    font-size: 2em;
+}
+
+.second_lbl {
+    color: #FFFFFF;
+}
+
+.image {
+    height: 6em;
+    width: 6em;
+}
+
+.birthday {
+    font-size: 1.5em;
+}
+
+hr {
+    color: #e8ee78;
+    width: 80%;
+}
+
+td {
+    padding-left: 30px;
+}
+
+#logout {
+    background-color: #808080;
+    margin-left: 5%;
+}
+
+#logout_label {
+    color: #FFFFFF;
+    font-family: AmaticSC;
+}
+
+@media only screen and (min-width:720px){
+
+    .container {
+        margin: 25px 50px;
+    }
+
+    #banner_logo {
+        width: 90%;
+        margin-left: 50px;
+    }
+    label {
+        font-size: 3em;
+    }
+
+    .birthday {
+        font-size: 2.5em;
+    }
+
+    .image {
+        height: 9em;
+        width: 9em;
+    }
+
+    #logout_label {
+        font-size: 3em;
+    }
+}
+
+
+@media only screen and (min-width:1080px){
+
+    .container {
+        margin: 50px;
+    }
+
+    #banner_logo {
+        width: 90%;
+        margin-left: 50px;
+    }
+    label {
+        font-size: 6em;
+    }
+
+    .birthday {
+        font-size: 3.5em;
+    }
+
+    .image {
+        height: 15em;
+        width: 15em;
+    }
+
+    #logout {
+        height: 8em;
+    }
+
+    #logout_label {
+        font-size: 6em;
+    }
+}

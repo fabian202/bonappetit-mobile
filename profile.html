@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+       	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/general.css" />
+        <link rel="stylesheet" type="text/css" href="css/profile.css" />
+        <script src="js/test/jquery-1.8.2.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+        <script type="text/javascript" src="js/helpers/ga-plugin.js"></script>
+        <title>Bon Appétit</title>
+    </head>
+    
+    <body  onload="GA.initialize();" onunload="GA.goingAway();">
+        <header>
+        <!--
+            <table>
+                <tr>
+                    <td style="text-align: left;">
+                        <div class="return"><img class="return" id="returnImg" src="img/return.png" onclick="history.go(-1)" /></div>
+                    </td>
+                    <td style="">
+                        <p>Perfíl</p>
+                    </td>
+                    <td style="text-align: right;">
+                        <div class="edit"><img src="img/edit.png" id="editImg" onclick="app.editText();"/></div>
+                    </td>
+                </tr>
+            </table>
+            -->
+            <br />
+            <br />
+            <div id="main" onclick="app.toMain();" class="back_button"><label id="back_label">< INICIO</label></div>
+        </header>
+        <div class="app">
+            <section class="form">
+                <!-- Aqui va el codigo del formulario -->
+                <div id="profileContent">
+                    <div style="overflow: hidden">
+                        <div id="photoContent" style="float:left;">
+                            <img id="image" src="img/b20.png" onclick="app.selectPhoto();"/>
+                        </div>
+                        <div id="nameProfile">
+                            <label style="font-weight:bold;" id="nameLabel">Nombres</label><br/>
+                            <label id="Label1">Cumpleaños </label><br/><label id="bDayLabel"></label><br/>
+                        </div>
+                    </div>
+                    <div class="lbl" >
+                        <img id ="editButton" src="img/edit_button.png" onclick="app.editText(1);" />
+                    </div>
+                    <div id="profileInfo">
+                        <div>
+                            <hr class="editText"/>
+                            <input id="nameEdit" type="text" class="editText" placeholder="Nombre"/><br />
+                            <!--<input type="text" id="datepicker" class="editText" readonly="readonly" placeholder="Cumpleaños"/><br/>-->
+                            <label class="lbl">Email: </label><label id="emailLabel"></label>
+                            <input id="emailEdit" type="text" class="editText" placeholder="Email"/><br/>
+                            <!--<input id="passwordEdit" type="password" class="editText" placeholder="Contraseña"/><br/>
+                            <input id="confirmPassEdit" type="password" class="editText" placeholder="Confirmar contraseña"/><br />-->
+                            <label class="lbl">Teléfono: </label><label id="phoneLabel"></label>
+                            <input id="phoneEdit" type="text" class="editText" placeholder="Teléfono"/><br/>
+                            <label class="lbl">Dirección: </label><label id="addressLabel"></label>
+                            <input id="addressEdit" type="text" class="editText" placeholder="Dirección"/><br/>
+                            <!--<label class="lbl">País: </label><label id="countryLabel"></label>
+                            <input id="countryEdit" type="text" class="editText" placeholder="País"/><br/>
+                            <label class="lbl">Ciudad: </label><label id="cityLabel"></label>
+                            <input id="cityEdit" type="text" class="editText" placeholder="Ciudad o Municipio"/><br/>-->
+                            <label class="lbl">Género: </label><label id="genderLabel"></label>
+                            <!--<input id="genderEdit" type="text" class="editText" placeholder="Género"/><br/>-->
+                            <div class="editText">
+                                <select id="gender_selector">
+                                    <option value="" disabled="disabled" selected="selected">Género</option>
+                                    <option value="M" selected="selected">Masculino</option>
+                                    <option value="F">Femenino</option>
+                                </select>
+                            </div>
+                            <div id="profileButton">
+                                <div id="points" onclick="app.getTotalPoints()" class="button lbl"><label id="points_label">Puntos acumulados</label></div> <br />
+                                <table>
+                                    <!--<tr>
+                                        <td class="lbl">
+                                            <div id="pointsButton"><img class="buttonType" src="img/points.png" onclick="app.getTotalPoints()"/></div>
+                                            
+                                        </td>
+                                    </tr>-->
+                                    <tr class="editText">
+                                        <td>
+                                            <div id="accept"><img class="buttonType" src="img/accept.png"  onclick="app.editText(1);"/></div>
+                                        </td>
+                                        <td>
+                                            <div id="cancel"><img class="buttonType" src="img/cancel_.png"  onclick="app.editText(0);"/></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td  class="lbl">
+                                            <div id="reservations" style="display: none;"><img class="buttonType" src="img/reservations.png"/></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--<div id="facebookLogin" style="margin: 10px 0px 10px 30px; width: 100%" onclick="app.loginFacebook();"><img class="buttonType" src="img/loginFacebook.png"/></div><br/>-->
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div id="profile_page"></div>
+            </section>
+        </div>
+        <!--<script type="text/javascript" src="phonegap.js"></script>-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+        <!-- cordova facebook plugin -->
+        <script src="js/libs/cdv-plugin-fb-connect.js"></script>
+        <!-- facebook js sdk -->
+        <script src="js/libs/facebook-js-sdk.js"></script>
+        <script type="text/javascript" src="js/libs/SocialSharing.js"></script>
+        <script type="text/javascript" src="js/helpers/navigate-app.js"></script>
+        <script type="text/javascript" src="js/helpers/share-table.js"></script>
+        <script type="text/javascript" src="js/helpers/general.js"></script>
+        <script type="text/javascript" src="js/content/profile.js"></script>
+        <!--<script type="text/javascript" src="http://debug.build.phonegap.com/target/target-script-min.js#80203262-73cc-11e3-a4f6-22000a98b3d6"></script>-->
+        <script type="text/javascript">
+            app.initialize();
+            ST.init();
+        </script>
+    </body>
+</html>

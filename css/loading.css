@@ -1,0 +1,19 @@
+﻿@font-face {
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+
+label {
+    font-family: AmaticSC;
+    font-weight:bold;
+    font-size: 3em;    
+    color: #ffffff;
+}
+
+#content {
+   margin: 50% 35%;
+}
+
+img {
+    width: 100%;
+}

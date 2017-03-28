@@ -1,0 +1,188 @@
+﻿@font-face {
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+
+label {
+    display:inline;
+    letter-spacing:1px;
+    margin-left: 5px;
+    color: #ffffff;
+    font-family: AmaticSC;
+    font-weight:bold;
+}
+
+.form {
+    display:block;
+    color: #000000;
+    font-family:Trebuchet MS;
+}
+
+#banner_logo {
+    height: 25%;
+    width: 100%;
+}
+
+.app {
+    display:block;
+    margin-top: 10px;
+    color: #000000;
+    font-family:Trebuchet MS;
+}
+
+form {
+    margin:0px 0px 0px 40px;
+    width:100%;
+}
+ 
+input {
+    width:90%;
+    height:27px;
+}
+
+.radio {
+    margin: 26px 0px 0px 10px;
+}
+
+.radio label{
+    padding: 2px 1em 0 0;
+}
+
+
+input[type=radio], input.radio {
+  margin: 20px 0px 0px 20px;
+  width: 50px;
+}
+
+#languageMenuImg {
+    width: 60px; 
+}
+
+#player {
+    width: 90%;
+    height: 15em;
+    margin-left: 15px;
+    margin-bottom:-10px;
+}
+
+#video_banner {
+    margin-top: -10px;
+    width: 100%;
+}
+
+#network_login {
+    height: 100px;
+    width:50%;
+    margin: 10% 30px;
+}
+
+#facebook_login {
+    width: 33%;
+    height: 100%;
+}
+
+#twitter_login {
+    width: 33%;
+    height: 100%;
+}
+
+#google_login {
+    width: 33%;
+    height: 100%;
+}
+
+#content {
+    display: inline-block;
+}
+#login_content {
+    width: 50%;
+    height: 300px;
+}
+
+#network_content { 
+    width: 50%;
+    height: 100px;
+}
+
+#login {
+    background-color: #FBFF00;
+    color: #000000;
+}
+
+#login_label {
+    color: #000000;
+}
+
+.label_button {
+    font-size: 2em;
+}
+
+#register {
+     background-color: #808080;
+}
+
+#content {
+    width: 100%;
+    margin-top: 25%;
+}
+
+#table_content {
+    width: 100%;
+}
+
+@media only screen and (min-width:720px){
+
+    p{
+        padding-left: 10px;
+	    font-size: 25px;
+    }
+
+    label {
+        font-size: 3em;
+    }
+
+    input {
+        width:90%;
+        height:60px;
+        margin:10px 5px;
+        font-size:25px;
+    }
+
+    input[type=radio], input.radio {
+        transform:  scale(3, 3);
+        -moz-transform: scale(3, 3); 
+        -ms-transform: scale(3, 3); 
+        -webkit-transform: scale(3, 3); 
+        -o-transform: scale(3, 3);
+        margin-top: 10px;
+    }
+
+    /*button{
+        height:60px;
+        font-size:25px;
+    }*/
+    #player {
+        width: 90%;
+        height: 30em;
+        margin-left: 30px;
+        margin-bottom:-10px;
+    }
+
+    #video_banner {
+        margin-top: -10px;
+        width: 100%;
+    }
+    .label_button {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width:1080px) {
+    label {
+        font-size: 5em;
+    }
+
+    .label_button {
+        font-size: 5em;
+    }
+}

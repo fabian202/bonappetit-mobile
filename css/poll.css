@@ -1,0 +1,120 @@
+﻿@font-face {
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+
+
+#line_banner {
+    margin-top: -15px;
+    width: 100%;
+}
+
+#banner {
+    margin-bottom:-15px;
+    height: 20%;
+}
+
+label {
+    display:inline;
+    letter-spacing:1px;
+    margin-left: 5px;
+}
+.form {
+    display:block;
+    color: #000000;
+    font-family:Trebuchet MS;
+}
+
+.app {
+    display:block;
+    margin-top: 10px;
+    color: #000000;
+    font-family:Trebuchet MS;
+}
+
+form {
+    width:100%;
+}
+ 
+input {
+    width:90%;
+    height:27px;
+}
+
+.lbl {
+    color: #FBFF00;
+}
+
+#send {
+    background-color: #FBFF00;
+    color: #000000;
+}
+
+#send_label {
+    color: #000000;
+    font-family: AmaticSC;
+    font-size: 1.5em;
+}
+
+.facebook_label {
+    font-family: Tahoma;
+    color: #ffffff;
+    font-size: 1em;
+    margin-left: 5%;
+}
+
+.facebook {
+    background-color: #3B5998;
+    height: 2.2em;
+}
+
+.facebook-logo {
+    float: left;
+    padding: 0% 0% 2% 2%;
+    margin-top: -2%;
+    transform: scale(1,1);
+    height: 2.2em;
+    width: 2.2em;
+    margin-right: 3%;
+}
+
+@media only screen and (min-width:640px){
+
+    div > img {
+        -webkit-transform: scale(2,2);
+        -moz-transform: scale(2,2);
+        transform: scale(2,2);
+        padding: 0.5em;
+    }
+
+    p{
+        padding-left: 10px;
+	    font-size: 25px;
+    }
+
+    label {
+        font-size:25px;
+    }
+
+    input {
+        width:90%;
+        height:60px;
+        margin:10px 5px;
+        font-size:25px;
+    }
+
+    #send_label {
+        font-size: 2em;
+    }
+
+    .facebook-logo {
+        padding-top: 2.5%;
+        padding-right: 3%;
+        margin-right: 3%;
+        margin-left: 2%;
+    }
+
+    .score_stars {
+        padding-top: -2%;
+    }
+}

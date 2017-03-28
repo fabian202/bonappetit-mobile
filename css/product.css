@@ -1,0 +1,439 @@
+﻿@font-face
+{
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+
+#categoryLabel {
+    width: 100%; 
+    font-size: 50px; 
+    font-family: AmaticSC;
+    color: #FBFF00;
+    margin: 30px 50px;
+}
+
+#image {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;    
+}
+
+hr {
+    color: #FBFF00;
+}
+
+label {
+    margin: 30px 0px;
+    font-family:Trebuchet MS;
+    vertical-align: middle;
+}
+
+#search {      
+   background: #FFFFFF;
+   background-image:url('../img/search-button.png');
+   background-repeat:no-repeat;
+   background-position:right;  padding-right:15px;
+}
+
+#productName {
+    /*width: 100%;*/
+    color: #FBFF00;
+    font-size: 1.5em;
+}
+
+#productDescription {
+    width: 100%;
+    color: #FFFFFF;
+}
+.price {
+    color: #FFFFFF;
+}
+#productPrice {
+    color: #FFFFFF;
+}
+
+#additionsLabel {
+     color: #FBFF00;
+     margin: 0px 50px;
+     display: none;
+}
+
+#additionContent {
+    color: #FFFFFF;
+}
+
+table {
+    text-align: center;
+}
+
+.tdContent {
+    width: 500px;
+}
+
+.check {
+    margin: 15px;
+}
+
+#totalPrice {
+    color: #FBFF00;
+     margin: 0px 50px;
+}
+
+#observation {
+
+    opacity: 0.5; 
+}
+
+
+#orderButton {
+    
+    background:#FFFF00;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#cancelButton {
+    background:#A1A1A1;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#button_table {
+    margin: 30px 0px 0px 0px;
+    width: 95%;
+}
+
+.inputCheck {
+    background-color:#00FF00; 
+    border: solid 1px #006699; 
+    border-bottom: dashed 3px #000;
+    transform: scale(2.5,2.5);
+    -webkit-transform:scale(2.5,2.5);
+}
+
+#order {
+    background-color: #FBFF00;
+    color: #000000;
+}
+
+
+#order_label {
+    color: #000000;
+    font-family: AmaticSC;
+    font-size: 1.5em;
+}
+
+#images {
+    float: left;
+    display: inline-block;
+    width: 100%;
+}
+
+#image {
+    width: 100%;
+}
+
+#td_image_1 {
+    width: 30%;
+}
+
+#td_image_2 {
+    width: 70%;
+}
+
+.button {
+    width: 95%;
+    margin-left: 2%;
+}
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    background:url("Check/check.png") left top no-repeat;
+}
+
+    input[type="checkbox"] + label {
+        vertical-align: central;
+        padding-bottom: 50%;
+    }
+
+input[type="checkbox"]:checked + label span {
+    background:url("Check/checked.png") left top no-repeat;
+}
+
+#addOrder {
+    font-family: AmaticSC;
+    padding-right: 2%; 
+    color: #000000; 
+    background: #FBFF00;  
+    font-size: 100%;
+}
+
+#addAddtion {
+    font-family: AmaticSC;
+    padding-right: 2%; 
+    color: #000000; 
+    background: #FBFF00; 
+    font-size: 100%;
+}
+
+#facebook_label {
+    font-family: Tahoma;
+    color: #ffffff;
+    font-size: 1em;
+    margin-left: 5%;
+}
+#facebook {
+    background-color: #3B5998;
+    height: 2.2em;
+}
+
+#facebook-logo {
+    height: 100%;
+    float: left;
+    padding: 0% 0% 2% 2%;
+    margin-top: -2%;
+}
+
+#scoreLabel {
+    color: #FFFFFF;
+}
+
+#popup_f {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0,0,0,0.6);
+   z-index: 10;
+   display: none;
+   font-size: 2.5em;
+   text-align:center;
+   color: #ffffff;
+}
+
+#popup_c {
+    margin-top: 3em;
+    background-color: rgba(0,0,0,0.9);
+}
+
+#popup_sidedish {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 99vw;
+   height: 100vh;
+   background-color: rgba(0,0,0,0.6);
+   z-index: 10;
+   display: none;
+   font-size: 2em;
+   text-align:center;
+   color: #ffffff;
+}
+
+#popup_sidedish_c {
+    margin-top: 3em;
+    background-color: rgba(0,0,0,0.9);
+}
+
+
+#aceptTerm {
+    font-family: AmaticSC;
+    padding-right: 2%; 
+    color: #000000; 
+    background: #FBFF00;  
+    font-size: 50%;
+}
+
+#cancelTerm {
+    font-family: AmaticSC;
+    padding-right: 2%; 
+    color: #000000; 
+    background: #A1A1A1; 
+    font-size: 50%;
+}
+
+#cancelSide {
+    font-family: AmaticSC;
+    padding-right: 2%; 
+    color: #000000; 
+    background: #A1A1A1; 
+    font-size: 80%;
+}
+
+#aceptSidedish {
+    font-family: AmaticSC;
+    padding-right: 2%; 
+    color: #000000; 
+    background: #FBFF00;  
+    font-size: 80%;
+}
+
+@media only screen and (min-width:720px){
+    /*table {
+        margin: 20px 50px;
+    }*/
+
+    /*#image {
+        border-radius: 10px;
+        width: 12.5em; 
+        height:12.5em;
+    }*/
+
+    /*div > img {
+        -webkit-transform: scale(2,2);
+        -moz-transform: scale(2,2);
+        transform: scale(2,2);
+        padding: 0.5em;
+    }*/
+
+    .categories_detail {
+        font-size: 2em;
+        margin: 0px 30px;
+    }
+
+    #productName {
+        font-size: 2.5em;
+    }
+
+    .price {
+        font-size: 2em;
+    }
+
+    #productDescription {
+        font-size: 1.8em;
+    }
+
+    #productPrice {
+        font-size: 2em;
+    }
+
+    #additionsLabel {
+         font-size: 2em;
+    }
+
+    .tdContent {
+        font-size: 2em;
+    }
+
+    .categories {
+        font-size: 3em;
+    }
+
+    .listSelector { 
+        width: 150px; 
+        height: 150px;
+    }
+    #totalPrice {
+        font-size: 2em;
+    }
+
+    #order_label {
+        font-size: 2em;
+    }
+
+    #addOrder {
+        font-size: 200%;
+    }
+
+    #addAddtion {
+         font-size: 200%;
+    }
+    
+    #facebook_label {
+        font-size: 1.3em;
+    }
+
+    #facebook {
+
+        background-color: #3B5998;
+        height: 3.5em;
+    }
+}
+
+@media only screen and (min-width:1080px){
+    table {
+        margin: 20px 50px;
+    }
+
+    /*#image {
+        width: 7em; 
+        height:7em;
+    }*/
+
+    /*div > img {
+        -webkit-transform: scale(2.5,2.5);
+        -moz-transform: scale(2.5,2.5);
+        transform: scale(2.5,2.5);
+        padding: 0.5em;
+    }*/
+
+
+    .categories_detail {
+        font-size: 2em;
+        margin: 0px 30px;
+    }
+
+    #productName {
+        font-size: 3em;
+    }
+
+    #productDescription {
+        font-size: 2.8em;
+    }
+    .price {
+        font-size: 4em;
+    }
+
+    #productPrice {
+        font-size: 4em;
+    }
+
+    #additionsLabel {
+         font-size: 4em;
+    }
+
+    .tdContent {
+        font-size: 2em;
+    }
+
+    .categories {
+        font-size: 3em;
+    }
+
+    .listSelector { 
+        width: 150px; 
+        height: 150px;
+    }
+    #totalPrice {
+        font-size: 4em;
+    }
+
+    #order_label {
+        font-size: 4em;
+    }
+
+    addition_label_detail{
+        font-size: 3em;
+    }
+
+    #addOrder {
+        font-size: 200%;
+    }
+
+    #facebook_label {
+        font-size: 2em;
+    }
+
+    #facebook {
+
+        background-color: #3B5998;
+        height: 3.5em;
+    }
+}

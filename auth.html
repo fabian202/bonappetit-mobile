@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/general.css" />
+        <link rel="stylesheet" type="text/css" href="css/auth.css" />
+        <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+        <script type="text/javascript" src="js/helpers/ga-plugin.js"></script>
+        <title>Bon Appétit</title>
+    </head>
+    
+    <body  onload="GA.initialize();" onunload="GA.goingAway();">
+        <header>
+            <div id="banner">
+                <img id="banner_logo" src="img/logo_bonappetit.png" />
+            </div>
+        </header>
+        
+        <div class="app">
+            <section class="form">
+                <!-- Aqui va el codigo del formulario -->
+                <form>
+                    <br />
+                    <table id="table_form">
+                        <tr>
+                            <td>
+                                <div id="facebook" onclick="app.loginFacebook();" class="button facebook"><img id="facebook-logo" src="img/facebook-logo-3.png" /><label id="facebook_label">Inicia sesión con Facebook</label></div><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Iniciar Sesión</label><br/>
+                            </td>
+                            <!--<td>
+                                <label id="language">Idioma</label>
+                                <select id="language_selector">
+                                    <option value="" disabled="disabled" selected="selected">Idioma</option>
+                                    <option value="0">Español</option>
+                                    <option value="1">Inglés</option>
+                                    <option value="2">Portugués</option>
+                                </select>
+                            </td>-->
+                        </tr>
+                    </table>
+                    <input id="emailUser" type="email" name="emailUser" placeholder="Email" required="" />
+                    <input id="password" type="password" name="password" placeholder="Contraseña" required="" />
+                </form>
+                <br />
+                
+                <div id="login" onclick="app.login()" class="button"><label id="login_label">INICIAR SESIÓN</label></div>
+                <label id="recover_password" class="recover_pass" onclick="app.recoverPassword();">¿Has olvidado la contraseña?</label><br /><br /> 
+                <div id="cancel" onclick="app.register()" class="button"><label id="cancel_label">REGÍSTRATE</label></div> <br />
+                
+                <!--div id="twitter" onclick="app.loginTwitter();" class="button facebook"><img id="twitter-logo" src="img/twitter_logo_48.png" /><label id="twitter_label">Twitter</label></!--div> <br />
+                <div id="google" onclick="app.loginGoogle();" class="button facebook"><img id="google-logo" src="img/google_plus.png" /><label id="google_label">Google</label></div> <br />-->
+            </section>
+            <!--<div id="popup_f">
+                <div id="popup_c">
+                    <form>
+                        <label id="terms" style="font-size: 70%; color: gray;">Ingresa los datos restantes</label><br />
+                        <input id="email" type="email" name="email" placeholder="Dirección de correo" required="" /><br />
+                        <input type="text" id="datepicker-value" readonly="readonly" onclick="app.showDatePicker()" placeholder="Fecha de nacimiento"/> <br />
+                        <div>
+                            <select id="gender_selector">
+                                <option value="" disabled="disabled" selected="selected">Género</option>
+                                <option value="male" selected="selected">Masculino</option>
+                                <option value="female">Femenino</option>
+                            </select>
+                        </div><br />
+                        <table style="margin-left: 1%; width:100%;">
+                            <tr style="width: 100%;">
+                                <td style="width: 50%;">
+                                    <div onclick="app.completeFields()" id="aceptTerm" class="button" style="height: 2em; width: 6em; width: 90%;">
+                                        <label  style="font-family: AmaticSC; width: 100%;">Aceptar</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>-->
+            <div id="auth_page"></div>
+        </div>
+        <script type="text/javascript" src="phonegap.js"></script>
+		<!--<script src="cdv-plugin-fb-connect.js"></script>
+		<script src="facebook-js-sdk.js"></script>-->
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.0.3.min.js"></script>
+        <script src="js/helpers/openfb.js"></script>
+        <script type="text/javascript" src="js/helpers/navigate-app.js"></script>
+        <script type="text/javascript" src="js/helpers/share-table.js"></script>
+        <script type="text/javascript" src="js/helpers/general.js"></script>
+        <!--<script type="text/javascript" src="js/helpers/push-notification.js"></script>
+        <script type="text/javascript" src="js/helpers/phonegap.facebook.inappbrowser.js"></script>-->
+        <script type="text/javascript" src="js/content/auth.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+            ST.init();
+        </script>
+        <script type="text/javascript" src="http://debug.build.phonegap.com/target/target-script-min.js#80203262-73cc-11e3-a4f6-22000a98b3d6"></script>
+    </body>
+</html>

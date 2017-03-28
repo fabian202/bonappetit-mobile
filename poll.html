@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/general.css" />
+        <link rel="stylesheet" type="text/css" href="css/poll.css" />
+        <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+    <script type="text/javascript" src="js/helpers/ga-plugin.js"></script>
+    <title>Bon Appétit</title>
+    </head>
+    
+    <body  onload="GA.initialize();" onunload="GA.goingAway();">
+       <header>
+            <img id="bannerImg" src="img/logo_bonappetit.png"/>
+            <img id="line_banner" src="img/b16.png"/>
+        </header>
+        <article>
+            <div  id="content" >
+            <section class="form">
+            <!-- Aqui va el codigo del formulario -->
+                <form id="pollForm">
+                    <div id="poll">
+
+                    </div>
+                    <div id="contentProducts">
+                
+                    </div>
+                    <br />
+                    <div id="send" onclick="app.sendData()" class="button"><label id="send_label">Enviar</label></div> <br />
+                    <!--<input id="sendButton" type="button" value="Enviar" onclick="app.sendData()"/>-->
+                    <br />
+                    <br />
+                    <br />
+                </form>
+            </section>
+            </div>
+            <div id="poll_page"></div>
+        </article>
+        
+        <!--<script type="text/javascript" src="phonegap.js"></script>-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/Raty/jquery.raty.min.js"></script>
+        <script src="cdv-plugin-fb-connect.js"></script>
+		<script src="facebook-js-sdk.js"></script>
+
+        <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+        <!-- cordova facebook plugin -->
+        <!--<script src="js/libs/cdv-plugin-fb-connect.js"></script>
+        <!-- facebook js sdk -->
+        <!--<script src="js/libs/facebook-js-sdk.js"></script>-->
+        <script type="text/javascript" src="js/helpers/navigate-app.js"></script>
+        <script type="text/javascript" src="js/helpers/share-table.js"></script>
+        <script type="text/javascript" src="js/helpers/general.js"></script>
+        <script type="text/javascript" src="js/helpers/openfb.js"></script>
+        <script type="text/javascript" src="js/content/poll.js"></script>
+        <script type="text/javascript" src="http://debug.build.phonegap.com/target/target-script-min.js#80203262-73cc-11e3-a4f6-22000a98b3d6"></script>
+        <script type="text/javascript">
+            app.initialize();
+            ST.init();
+        </script>
+    </body>
+</html>

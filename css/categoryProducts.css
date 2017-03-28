@@ -1,0 +1,141 @@
+﻿@font-face
+{
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+
+article {
+    font-size: 1.5em;
+}
+
+.products {
+    width: 99%; 
+    text-align: left; 
+    color: #888888;
+    margin: 0px 5px 0px 5px;
+    font-size: 1em;
+}
+
+#contentCategory {
+    width: 100%; 
+    text-align: center; 
+    color: #778899
+}
+
+#categoryLabel {
+    width: 100%; 
+    font-size: 1.5em; 
+    font-family: AmaticSC;
+    color: #FBFF00;
+    margin: 20px;
+}
+
+.listSelector {
+    margin: 5px; 
+    width: 3.5em; 
+    /*height: 3.5em;*/
+}
+
+
+hr {
+    border-color: #FBFF00;
+    color: #FBFF00;
+    width: 100%;
+}
+#search {      
+   background: #FFFFFF;
+   background-image:url('../img/search-button.png');
+   background-repeat:no-repeat;
+   background-position:right;  padding-right:15px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.widthProduct {
+    width: 100%;
+    text-align: justify;
+}
+
+.productName {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+table {
+    border-color: #ffffff;
+    width: 100%;
+    text-align: justify;
+}
+
+@media only screen and (min-width:720px){
+
+    .products {
+        font-size: 2em;
+    }
+
+    #categoryLabel {
+        font-size: 3em;
+        margin: 35px;
+    }
+
+    .categories_detail {
+        font-size: 2em;
+        margin: 0px 30px;
+    }
+
+
+    .categories {
+        font-size: 3em !important;
+    }
+
+    .listSelector { 
+        width: 5em; 
+        /*height: 5em;*/
+    }
+
+    
+    .td_img {
+        width:5em; 
+    }
+
+    .widthProduct {
+        height: 5em;
+    }
+}
+
+@media only screen and (min-width:1080px) {
+     .products {
+        font-size: 4em;
+    }
+
+    #categoryLabel {
+        font-size: 6em;
+        margin: 35px;
+    }
+
+    .categories_detail {
+        font-size: 2em;
+        margin: 0px 30px;
+    }
+
+
+    .categories {
+        font-size: 3em !important;
+    }
+
+    .listSelector { 
+        width: 5em; 
+        height: 5em;
+    }
+
+    
+    .td_img {
+        width:5em; 
+    }
+
+    .widthProduct {
+        height: 5em;
+    }
+}

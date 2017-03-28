@@ -1,0 +1,96 @@
+﻿@font-face
+{
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+body {
+    overflow: hidden;
+    width: inherit;
+}
+
+label {
+    font-family: AmaticSC;
+    display:inline;
+    letter-spacing:1px;
+    margin-left: 5px;
+    color: #FBFF00;
+    font-size: 1.5em;
+}
+
+.second_lbl {
+    color: #FFFFFF;
+}
+
+.container {
+    margin: 15px;
+
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+}
+
+hr {
+    color: #e8ee78;
+    width: 80%;
+}
+
+td {
+    padding-left: 30px;
+}
+
+.tittle {
+    margin-left: 25px;
+}
+
+.friend_name {
+    color: #ffffff;
+}
+
+.waiter {
+    color: #808080;
+}
+
+#friends {
+}
+
+.friend {
+   float: left;
+   margin: 15px;
+}
+
+#share {
+    background-color: #FBFF00;
+    color: #000000;
+}
+
+
+#share_label {
+    color: #000000;
+    font-family: AmaticSC;
+    font-size: 1.5em;
+}
+
+@media only screen and (min-width:720px){
+    #banner_logo {
+        width: 90%;
+        margin-left: 50px;
+    }
+    label {
+        font-size: 50px;
+    }
+
+    .birthday {
+        font-size: 30px;
+    }
+
+    .image {
+        height: 150px;
+        width: 150px;
+    }
+
+    #share_label {
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,230 @@
+﻿
+@font-face
+{
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+.app {
+    font-family:Trebuchet MS;
+}
+
+form {
+    width:100%;
+    margin-left: 3%;
+}
+ 
+input {
+    border-radius: 4px;
+}
+
+label {
+    font-family: AmaticSC;
+    display:inline;
+    letter-spacing:1px;
+    margin-left: 5px;
+    color: #FBFF00;
+    font-size: 1.3em;
+}
+
+
+recover_password {
+    background-color:#ffffff;
+
+}
+
+u {
+    color: #ffffff;
+}
+
+
+#language {
+    color: #a1a1a1;
+}
+
+#language_selector {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin:10px 5px;
+    background: #a0a0a0;
+
+}
+#banner_logo {
+    height: 25%;
+    width: 100%;
+}
+  
+#login {
+    background-color: #FBFF00;
+    color: #000000;
+}
+
+.facebook {
+    padding-top: 4%;
+    margin: 0px;
+}
+
+#login_label {
+    color: #000000;
+    font-size: 1.5em;
+}
+
+#cancel_label {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+#facebook_label {
+    font-family: Tahoma;
+    color: #ffffff;
+    font-size: 1em;
+    margin-left: -10%;
+}
+
+#twitter_label {
+    font-family: Tahoma;
+    color: #ffffff;
+    font-size: 1.4em;
+    margin-left: -10%;
+}
+
+.centerlabel {
+    text-align: center;
+}
+
+
+#google_label {
+    font-family: Tahoma;
+    color: #ffffff;
+    font-size: 1.4em;
+    margin-left: -10%;
+}
+
+
+#facebook {
+
+    background-color: #3B5998;
+    height: 2.2em;
+}
+
+#twitter {
+    background-color: #0084B4;
+    height: 2.2em;
+}
+
+#google {
+    background-color: #d34836;
+    height: 2.2em;
+}
+
+#cancel {
+    background-color: #808080;
+}
+
+#facebook-logo {
+    height: 100%;
+    float: left;
+    padding: 0% 0% 2% 2%;
+    margin-top: -2%;
+}
+
+#twitter-logo {
+    height: 100%;
+    float: left;
+    padding: 0% 0% 2% 2%;
+    margin-top: -2%;
+}
+
+#google-logo {
+    height: 100%;
+    float: left;
+    padding: 0% 0% 2% 2%;
+    margin-top: -2%;
+}
+
+.recover_pass {
+    font-family: Verdana;
+    color: #ffffff;
+    font-size: 100%;
+    margin: 5%;
+    text-decoration: underline;
+}
+
+#table_form {
+    width: 105%;
+}
+
+#popup_f {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0,0,0,0.6);
+   z-index: 10;
+   display: none;
+   font-size: 2.5em;
+   text-align:center;
+   color: #ffffff;
+}
+
+#popup_c {
+    margin-top: 3em;
+    background-color: rgba(0,0,0,0.9);
+}
+
+#aceptTerm {
+    font-family: AmaticSC;
+    padding-right: 2%; 
+    color: #000000; 
+    background: #FBFF00;  
+    font-size: 50%;
+}
+
+  
+@media only screen and (min-width:720px){
+    label {
+        font-size:3.5em;
+    }
+    input {
+        width:90%;
+        height:60em;
+        margin:30px 0px 0px 0px;
+        font-size:2em;
+        color: #302101;
+    }
+
+    #table_form {
+        width: 94%;
+    }
+    form {
+        margin:0px 0px 0px 40px;
+        width:100%;
+    }
+
+    #language {
+        font-size: 2em;
+    }
+
+    #login_label {
+        font-size: 3.5em;
+    }
+
+    #cancel_label {
+        font-size: 3.5em;
+    }
+
+    #facebook_label {
+        font-size: 2.5em;
+    }
+
+    #facebook {
+
+        background-color: #3B5998;
+        height: 3.5em;
+    }
+
+    .recover_pass {
+        font-size: 150%;
+    }
+}

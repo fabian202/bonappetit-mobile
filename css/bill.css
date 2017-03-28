@@ -1,0 +1,275 @@
+﻿@font-face {
+    font-family: AmaticSC;
+    src: url("FontFamily/AmaticSC-Bold.ttf");
+}
+
+.categoryLabel {
+    width: 100%;
+    font-size: 1.8em;
+    font-family: AmaticSC;
+    color: #FBFF00;
+    margin: 10px 20px;
+}
+
+label {
+    margin: 5px 5px;
+    font-family: Trebuchet MS;
+    vertical-align: middle;
+}
+
+#search {
+    background: #FFFFFF;
+    background-image: url('../img/search-button.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+}
+
+.sp-quantity {
+    background-color: #9e9e9e;
+    border-radius: 5px;
+}
+
+.sp-minus {
+    width: 0.8em;
+    height: 0.8em;
+    float: left;
+    text-align: center;
+}
+
+.sp-input {
+    width: 0.5em;
+    height: 0em;
+    float: left;
+}
+
+.sp-plus {
+    width: 0.8em;
+    height: 0.8em;
+    float: right;
+    text-align: center;
+}
+
+.sp-input input {
+    width: 0.6em;
+    height: 0em;
+    text-align: center;
+    font-family: "ProximaNova Bold", Helvetica, Arial;
+    border: none;
+    text-align: center;
+}   
+.sp-minus a, .sp-plus a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+
+#tipPercent {
+    font-size: 1em;
+    width: 1em;
+    height: 1em;
+    margin:0px;
+}
+
+.ddd {
+    width: 1em;
+    height: 0.5em;
+    margin: 0px 20px;
+}
+
+#content {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+input[type=number] {
+    border-radius: 2px;
+}
+
+#table_payment {
+    margin: 5px;
+    width: 90%;
+}
+
+#totalPriceDiv {
+    width: 90%;
+    height: 2em;
+    background-color: #737373;
+    text-align: center;
+    padding: 10px;
+    opacity: 0.6;
+}
+
+#totalPrice {
+    margin: 10px;
+    color: #fbff00;
+}
+
+.change {
+    display: none;
+}
+
+#change {
+    height: 1em;
+}
+
+#lblPayment {
+    margin: 10px 5px;
+}
+
+#bill {
+    background-color: #FBFF00;
+    color: #000000;
+}
+
+#bill_label {
+    color: #000000;
+    font-family: AmaticSC;
+    font-size: 1.5em;
+}
+
+#my_acount {
+    background-color: #FBFF00;
+    opacity: 0.6;
+}
+
+#my_acount_label {
+    color: #000000;
+    opacity: 1;
+}
+
+.name {
+    color: #FBFF00;
+}
+
+
+@media only screen and (min-width:720px){
+    .categoryLabel {
+        font-size: 4em;
+    }
+
+    .sp-minus {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .sp-input {
+        width: 1em;
+        height: 0em;
+    }
+
+    .sp-plus {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .sp-input input {
+        width: 1.2em;
+        height: 0em;
+    }   
+    .sp-minus a, .sp-plus a {
+        width: 100%;
+        height: 100%;
+    }
+
+    #tipPercent {
+        font-size: 1em;
+        width: 2em;
+        height: 2em;
+    }
+
+    .ddd {
+        width: 2em;
+        height: 1em;
+    }
+
+    #content {
+        font-size: 2em;
+    }
+
+    #bill_label {
+        font-size: 2em;
+    }
+
+    label {
+        margin: 20px 10px;
+    }
+
+    #totalPriceDiv {
+        height: 3em;
+    }
+
+    #change {
+        height: 1em;
+    }
+    #lblPayment {
+        margin: 20px 5px;
+    }
+}
+
+
+@media only screen and (min-width:1080px){
+    .categoryLabel {
+        font-size: 6em;
+    }
+
+    .sp-minus {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .sp-input {
+        width: 1em;
+        height: 0em;
+    }
+
+    .sp-plus {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .sp-input input {
+        width: 1.2em;
+        height: 0em;
+    }   
+    .sp-minus a, .sp-plus a {
+        width: 100%;
+        height: 100%;
+    }
+
+    #tipPercent {
+        font-size: 1em;
+        width: 2em;
+        height: 2em;
+    }
+
+    .ddd {
+        width: 2em;
+        height: 1em;
+    }
+
+    #content {
+        font-size: 2em;
+    }
+
+    #bill_label {
+        font-size: 3em;
+    }
+
+    label {
+        margin: 20px 10px;
+        font-size: 2em;
+    }
+
+    #totalPriceDiv {
+        height: 2em;
+    }
+
+    #change {
+        height: 1em;
+    }
+    #lblPayment {
+        margin: 20px 5px;
+    }
+}

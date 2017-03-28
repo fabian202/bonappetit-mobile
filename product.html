@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class=" overthrow-enabled">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/general.css" />
+    <link rel="stylesheet" type="text/css" href="css/product.css" />
+    <link rel="stylesheet" type="text/css" href="css/overthrow/overthrow.css" />
+    <script type="text/javascript" charset="utf-8" src="js/libs/config.js"></script>
+    <script type="text/javascript" src="js/helpers/ga-plugin.js"></script>
+    <title>Bon Appétit</title>
+    </head>
+    
+    <body  onload="GA.initialize();" onunload="GA.goingAway();">
+        <header>
+            <!--<table>
+                <tr>
+                    <td style="text-align: left; width: 35%">
+                        <div id="return"><img id="returnImg" src="img/return.png" /></div>
+                    </td>
+                    <td style="text-align: right; height: 40px;">
+                        <div id="edit"><input type="search" id="search" style="width: 90%" onkeydown="app.cleanDiv()"/></div>
+                    </td>
+                </tr>
+            </table>-->
+            
+            <!--<img id="bannerImg" src="img/logo_bonappetit.png"/>-->
+            <div>
+                <div id="back" onclick="app.toCategoryProducts();" class="back_button"><label id="back_label">< PRODUCTOS</label></div>
+                <img id="line_banner" src="img/b161.png"/>
+
+            </div>
+            <table style="margin-left: 1%; width:100%;">
+                <tr style="width: 100%;">
+                    <td style="width: 50%;">
+                        <div onclick="app.showAdditions()" id="addAddtion" class="button" style="height: 2em; width: 6em; width: 90%;">
+                            <label  style="font-family: AmaticSC; width: 100%;">Adiciones</label>
+                        </div>
+                    </td>
+                    <td style="width: 50%;">
+                        <div onclick="app.constructSidedish()" id="addOrder" class="button" style="height: 2em; width: 6em; width: 90%;">
+                            <label  style="font-family: AmaticSC; width: 100%;">Agregar al carrito</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+            
+        </header>
+        <article class="overthrow" style="height:inherit">
+            <div id="content" style="overflow: auto; height:auto" class="primary overthrow">
+                
+                <table id="tableProduct" style="width: 100%;">
+                    <tr id="tittle" class="product">
+                        <td>
+                            <label id="productName">Nombre del producto</label><br />
+                            <label class="price">Precio: </label><label id="productPrice"  class="price">$Precio</label><br /><br />
+                        </td>
+                    </tr>
+                    <tr class="product">
+                        <td id="td_image_1">
+                            <img id="image" src="img/b20.png" /><br />
+                        </td>
+                    </tr>
+                    <tr class="product">
+                        <td id="td_image_2" style="text-align:justify;">
+                            <label id="productDescription" style="text-align:justify;">Descripción del producto</label><br /><br />
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td>
+                                        <div id="score" style="text-align:center; width: 100%;"></div>
+                                        <label id="scoreLabel"></label>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="facebook" onclick="app.postFacebook();" class="button facebook"><img id="facebook-logo" src="img/facebook-logo-3.png" /><label id="facebook_label" style="text-align:center;">Recomendar en Facebook</label></div> <br />
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr/>
+                        </td>
+                    </tr>
+                    <tr class="additions">
+                        <td>
+                            <label id="additionsLabel">ADICIONES</label>
+                            <table id="additionContent" style="text-align:left">
+                                <!--<tr onclick="app.checkAddition('1','10', '1000', 'Adición')">
+                                    <td class="tdContent">
+                                        <input class="inputCheck" type="checkbox" id="list1" onclick="app.checkAddition('1', '10', '1000', 'Adición')"/>
+                                        <label class="addition_label_detail" for="list1"><span></span>Adición</label>
+                                    </td>
+                                    <td class="tdContent">
+                                        <label class="addition_label_detail"  for="list1">$ 1000</label>
+
+                                    </td>
+
+                                </tr>-->
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="additions">
+                        <td>
+                            <div id="ob_div">
+                                <input type="text" id="observation" placeholder="Observaciones" style="width:87%" /><br />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="totalPrice"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="order" onclick="app.constructSidedish()" class="button"><label id="order_label">AGREGAR AL CARRITO</label></div> <br />
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <br/>
+                <br/>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+            
+            <div id="product_page"></div>
+        </article>
+        <div id="popup_f">
+                <div id="popup_c">
+                    <form>
+                        <label id="terms" style="font-size: 70%; color: gray;">Términos de la carne </label><br />
+                        <label id="wellDone" style="font-size: 60%" onclick="app.selectTerm(1)">Bien cocido </label><br />
+                        <label id="aPoint" style="font-size: 60%" onclick="app.selectTerm(2)">Tres cuartos</label> <br />
+                        <label id="rare" style="font-size: 60%" onclick="app.selectTerm(3)">Medio</label> <br />
+                        <label id="blue" style="font-size: 60%" onclick="app.selectTerm(4)">Azul</label> <br /><br />
+                        <table style="margin-left: 1%; width:100%;">
+                            <tr style="width: 100%;">
+                                <td style="width: 50%;">
+                                    <div onclick="app.aceptTerm()" id="aceptTerm" class="button" style="height: 2em; width: 6em; width: 90%;">
+                                        <label  style="font-family: AmaticSC; width: 100%;">Aceptar</label>
+                                    </div>
+                                </td>
+                                <td style="width: 50%;">
+                                    <div onclick="app.cancelTerm()" id="cancelTerm" class="button" style="height: 2em; width: 6em; width: 90%;">
+                                        <label  style="font-family: AmaticSC; width: 100%;">Cancelar</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                
+            </div>
+
+        <div id="popup_sidedish">
+            <div id="popup_sidedish_c">
+                <div style="overflow-y:auto; height: 60vh;">
+                    <label id="sidedish_tittle" style="font-size: 70%; color: #FBFF00;"></label><br />
+                    <label id="sidedish_subtittle" style="font-size: 65%; color: #ffd800;"></label><br />
+                    <table id="sidedish_table" style="text-align:left">
+                                
+                    </table>
+                </div>
+                <div>
+                    <table style="margin-left: 1%; width:100%;">
+                        <tr style="width: 100%;">
+                            <td style="width: 50%;">
+                                <div onclick="app.constructSidedish();" id="aceptSidedish" class="button" style="height: 2em; width: 90%;">
+                                    <label  style="font-family: AmaticSC; width: 100%;">Aceptar</label>
+                                </div>
+                            </td>
+                            <td style="width: 50%;">
+                                <div onclick="app.cancelTerm()" id="cancelSide" class="button" style="height: 2em; width: 90%;">
+                                    <label  style="font-family: AmaticSC; width: 100%;">Cancelar</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--<div id="ShareLink" onclick="window.plugins.socialsharing.share('Quiero invitarte a mi mesa', null, null, ''+window.localStorage.getItem('link'));" style="width: 90%; height: 60px;">Share</div>-->
+        <footer>
+
+            <div id="footer_div" style="display: inline-block;">
+                <div style="display: inline">
+                    <div class="td_footer">
+                        <img id="Img5" class="footer_image" src="img/app.jpg" onclick="G.friends()" /><br />
+                        <label id="Label4" class="text">Amigos</label>
+                    </div>
+                    <div class="td_footer">
+                         <img id="Img6" class="footer_image" src="img/waiter.png" onclick="G.callWaiter()"/><br />
+                        <label id="Label5" class="text">Mesero</label>
+                    </div>
+                    <div class="td_footer">
+                        <img id="Img7" class="footer_image" src="img/chart.png" onclick="G.showOrder()"/>
+                        <label id="orderPrice" class="text">$0.00</label>
+                    </div>
+                    <div class="td_footer">
+                        <img id="Img8" class="footer_image" src="img/bill1.png" onclick="G.showBill()"/>
+                        <label id="Label7" class="text">Cuenta</label>
+                    </div>
+                </div>
+            </div>
+            <div class="reserve_div">
+                <div id="reserve" onclick="app.notification()" class="button"><label id="bill_label">Reservar</label></div> <br />
+            </div>
+            <!--<table>
+                    <tr>
+                        <td style="text-align: center; width: 33%;">
+                            <div id="callWaiter"><img id="Img1" src="img/call_waiter.png" onclick="app.callWaiter()" style="margin: 0px;"/></div>
+                        </td>
+                        <td style="text-align: center; width: 15%">
+                            <div id="totalAccount" onclick="app.showOrder()"><img id="Img2" src="img/total_account.png" style="z-index: -1; overflow: inherit; position: absolute; bottom: 0;" /><label style="z-index: 1; padding-top: 80px;" id="orderPrice">$0.00</label></div>
+                        </td>
+                        <td style="text-align: center; width: 33%;">
+                            <div id="requestAccount"><img id="Img3" src="img/request_account.png" /></div>
+                        </td>
+                    </tr>
+                </table>-->
+            <!--<table id="footer_banner">
+                <tr>
+                    <td>
+                        <img id="Img1" class="footer_image" src="img/app.jpg" onclick="app.friends()" />
+                    </td>
+                    <td style="padding: 8px;">
+                        <img id="Img2" class="footer_image" src="img/waiter.png" onclick="app.callWaiter()"/>
+                    </td>
+                    <td>
+                        <img id="Img3" class="footer_image" src="img/chart.png" onclick="app.showOrder()"/>
+                        <label id="orderPrice" style="display: none;">$0.00</label>
+                    </td>
+                    <td>
+                        <img id="Img5" class="footer_image" src="img/bill1.png" onclick="app.showBill()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="Label1" class="text">Amigos</label>
+                    </td>
+                    <td>
+                        <label id="Label2" class="text">Mesero</label>
+                    </td>
+                    <td>
+                        <label id="Label3" class="text">$0.00</label>
+                    </td>
+                    <td>
+                        <label id="Label4" class="text">Cuenta</label>
+                    </td>
+                </tr>
+            </table>-->
+            <!--<img id="footer_banner" src="img/notifications.jpg"/>-->
+        </footer>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <!--<script type="text/javascript" src="cordova.js"></script>-->
+        <script type="text/javascript" charset="utf-8" src="js/libs/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/libs/Raty/jquery.raty.min.js"></script>
+        <!--<script type="text/javascript" src="js/libs/SocialSharing.js"></script>-->
+
+        <!--<script src="cdv-plugin-fb-connect.js"></script>
+		<script src="facebook-js-sdk.js"></script>-->
+
+        <script type="text/javascript" src="js/libs/config.js"></script>
+        <script type="text/javascript" src="js/helpers/navigate-app.js"></script>
+        <script type="text/javascript" src="js/helpers/share-table.js"></script>
+        <script type="text/javascript" src="js/helpers/general.js"></script>
+        <script type="text/javascript" src="js/helpers/openfb.js"></script>
+        <script type="text/javascript" src="js/content/product.js"></script>
+        <!--<script type="text/javascript" src="http://debug.build.phonegap.com/target/target-script-min.js#80203262-73cc-11e3-a4f6-22000a98b3d6"></script>-->
+        <script type="text/javascript">
+            app.initialize();
+            ST.init();
+        </script>
+        <script type="text/javascript" src="js/helpers/attended-table.js"></script>
+        <script type="text/javascript">
+            AT.getAttendedTable();
+        </script>
+
+    </body>
+</html>
