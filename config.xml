@@ -83,7 +83,7 @@
       <scheme>pgbw</scheme>
     </gap:url-scheme>
     <!--<gap:plugin name="com.adobe.plugins.gaplugin" source="npm"/>-->
-    <gap:plugin name="com.phonegap.plugin.statusbar" source="npm"/>
+    <gap:plugin name="com.phonegap.plugin.statusbar" source="pgb" />
     <gap:config-file platform="ios" parent="UIStatusBarHidden">
       <true/>
     </gap:config-file>
